@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>許さんぞショッカー</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Aso Joho Business" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" >
+		
+		<script src="js/jquery-3.7.1.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+		<h1>KAMENRIDER</h1>
+		<nav>
+			<ul>
+            	<li><a href="">はじめ</a></li>
+				<li><a href="#kanso">感想</a></li>
+        	</ul>
+		</nav>
+		<div class="inner">
+			<div class="slideshow">
+				<img src="./images/50.jpg" alt="" width="1600" height="700">
+				<img src="./images/rider.jpg" alt="" width="1600" height="700">
+				<img src="./images/zettu.jpg" alt="" width="1600" height="700">
+				<img src="./images/zio20.jpg" alt="" width="1600" height="700">
+			</div>
+		</div>
+		<div class="centertext">
+			<div class="bold"><p>仮面ライダーとは</p></div>
+				<img src="./images/rider1.jpg" alt="" width="500" height="500">
+				<p>1971年に放送された『仮面ライダー』に端を発した、石ノ森章太郎原作・東映制作による特撮テレビドラマシリーズに登場
+					するヒーロー。<br>主人公などが仮面ライダーと呼ばれる戦士に変身し、怪人と総称される敵と戦うことが多い。<br>
+					驚異的な筋力や能力を持つもち、中には特殊能力を持つライダーも存在する。<br>
+					モチーフはバッタ、カブトムシ等の昆虫が多いが、最近では本、お菓子など幅広い物がモチーフになっている。
+				</p>
+		
+			<div class="bold"><p>仮面ライダーシリーズ</p></div>
+			<img src="./images/riders.jpg" alt="" width="650" height="500">
+				<p>仮面ライダー1号から現在の仮面ライダーゼッツまで約４０作程続いている。<br>
+					「昭和」の頃は敵組織に改造された改造人間がベースだったが、「平成」、「令和」は作品ごとに異なる。<br>
+					そのため仮面ライダーの中ですべてのライダーに当てはまる定義は存在しない。<br>
+					今回は「平成」、「令和」の仮面ライダーにスポットライトを当てる。
+				</p>
+			<div class="bold"><p>仮面ライダー一覧</p></div>
+				<button onclick="location.href='./ichiran.html'">ライダー一覧へ</button>
+			<br>
+			<form action="https://tacmic-atr.info/answer.php" method="post" id="kanso">
+         		<dl>
+              		<dt>お名前</dt>
+             		<dd>
+                		<input type="text" id="name" name="name" style="width: 600px; font-size:16px; background-color: #ffeeee;" >
+            		</dd>
+                 	<dt>メールアドレス</dt>
+             		<dd>
+                		<input type="email" id="email"name="mail" style="width: 600px;">
+             		</dd>
+            		<dt>感想をどうぞ</dt>
+                		<dd>
+                  		<textarea name="comment" cols="80" rows="8"></textarea>
+                		</dd>
+        		</dl>
+				 <p id="error"></p>
+				<button type="button" onclick="checkInput()">チェック</button>
+          		<p class="submit"><input type="submit" name="submit" value="送信する" style="color: yellow; background-color: #000080; width: 300px; padding: 5px;"></p>
+        	</form>
+			<button class="top">トップへ</button>
+		</div>
+
+	</body>
+</html>
