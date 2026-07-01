@@ -176,3 +176,71 @@ img {
         width: 80%;
     }
 }
+/* ===== フォームカード中央揃え ===== */
+.formc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ===== YouTube動画レスポンシブ対応 ===== */
+.subPlayer {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+}
+
+/* ===== タイトル画像 ===== */
+.logo-small {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== 本文画像中央 ===== */
+.centertext img,
+.formc img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== スマホ対応 ===== */
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 200px;
+        text-align: center;
+    }
+
+    .formc {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .subPlayer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .bold {
+        font-size: 20px;
+    }
+}
