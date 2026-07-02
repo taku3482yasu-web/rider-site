@@ -188,8 +188,7 @@ img {
 .subPlayer {
     width: 100%;
     max-width: 560px;
-    aspect-ratio: 16 / 9;
-    height: auto;
+    height: 315px;
     border: none;
 }
 
